@@ -1,1 +1,1 @@
-<php include_once("HTTP500.html") ?>
+<?php include_once("HTTP500.html") ?>
