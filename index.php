@@ -1,1 +1,1 @@
-<?php include_once("Downloads/health/index.html") ?>
+<?php include_once("index.html") ?>
