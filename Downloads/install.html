@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="" dir="ltr" class="install-background">
+<head>
+  <title>Database configuration | Drupal</title>
+  <meta charset="utf-8" />
+<link rel="shortcut icon" href="http://localhost/drupal/core/misc/favicon.ico" type="image/vnd.microsoft.icon" />
+<meta name="Generator" content="Drupal 8 (http://drupal.org)" />
+<meta name="robots" content="noindex, nofollow" />
+
+  <link rel="stylesheet" href="http://localhost/drupal/core/assets/vendor/normalize-css/normalize.css?0" media="all" />
+<link rel="stylesheet" href="http://localhost/drupal/core/modules/system/css/system.module.css?0" media="all" />
+<link rel="stylesheet" href="http://localhost/drupal/core/modules/system/css/system.theme.css?0" media="all" />
+<link rel="stylesheet" href="http://localhost/drupal/core/modules/system/css/system.admin.css?0" media="all" />
+<link rel="stylesheet" href="http://localhost/drupal/core/modules/system/css/system.maintenance.css?0" media="all" />
+<link rel="stylesheet" href="http://localhost/drupal/core/themes/seven/style.css?0" media="screen" />
+<link rel="stylesheet" href="http://localhost/drupal/core/themes/seven/install-page.css?0" media="all" />
+
+  <script>
+<!--//--><![CDATA[//><!--
+var drupalSettings = {"basePath":"\/drupal\/","scriptPath":"","pathPrefix":"","currentPath":"","ajaxPageState":{"theme":"seven","js":{"core\/assets\/vendor\/jquery\/jquery.js":1,"core\/assets\/vendor\/domready\/ready.min.js":1,"core\/misc\/drupal.js":1,"core\/assets\/vendor\/jquery-once\/jquery.once.js":1,"core\/misc\/states.js":1,"core\/assets\/vendor\/jquery.ui\/external\/jquery.cookie.js":1,"core\/misc\/form.js":1,"core\/assets\/vendor\/modernizr\/modernizr.min.js":1,"core\/misc\/collapse.js":1,"core\/themes\/seven\/js\/mobile.install.js":1},"css":{"style.css":1,"normalize.css":1,"system.module.css":1,"system.theme.css":1,"system.admin.css":1,"system.maintenance.css":1,"install-page.css":1}}};
+//--><!]]>
+</script>
+<script src="http://localhost/drupal/core/assets/vendor/modernizr/modernizr.min.js?v=2.6.2"></script>
+<script src="http://localhost/drupal/core/assets/vendor/domready/ready.min.js?v=master"></script>
+<script src="http://localhost/drupal/core/assets/vendor/jquery/jquery.js?v=2.0.3"></script>
+<script src="http://localhost/drupal/core/assets/vendor/jquery-once/jquery.once.js?v=1.2.3"></script>
+<script src="http://localhost/drupal/core/misc/drupal.js?v=8.0-dev"></script>
+<script src="http://localhost/drupal/core/assets/vendor/jquery.ui/external/jquery.cookie.js?v=1.10.2"></script>
+<script src="http://localhost/drupal/core/misc/states.js?v=8.0-dev"></script>
+<script src="http://localhost/drupal/core/misc/form.js?v=8.0-dev"></script>
+<script src="http://localhost/drupal/core/misc/collapse.js?v=8.0-dev"></script>
+<script src="http://localhost/drupal/core/themes/seven/js/mobile.install.js?v=8.0-dev"></script>
+
+</head>
+<body class="install-page">
+  <div id="page">
+    <div id="header">
+              <h1 id="site-name">
+          <span>Drupal</span>
+        </h1>
+      
+      
+      
+    </div> <!-- /header -->
+
+    <div id="container" class="clearfix">
+
+              <div id="sidebar-first" class="column sidebar">
+          <h2 class="visually-hidden">Installation tasks</h2><ol class="install-task-list"><li class="done">Choose language<span class="visually-hidden"> (done)</span></li><li class="done">Choose profile<span class="visually-hidden"> (done)</span></li><li class="done">Verify requirements<span class="visually-hidden"> (done)</span></li><li class="active">Set up database<span class="visually-hidden"> (active)</span></li><li>Installation profile</li><li>Configure site</li><li>Finished</li></ol>
+        </div> <!-- /sidebar-first -->
+      
+      <div id="content" class="column">
+        <h1 class="title" id="page-title">Database configuration</h1>                <div id="content-content" class="clearfix">
+          <form class="install-settings-form" action="/drupal/core/install.php?langcode=en&amp;profile=standard" method="post" id="install-settings-form" accept-charset="UTF-8"><div><div class="form-item form-type-radios form-item-driver form-disabled">
+ <label for="edit-driver">Database type<abbr class="form-required" title="This field is required.">*</abbr></label> <div id="edit-driver" class="form-radios"><div class="form-item form-type-radio form-item-driver form-disabled">
+ <input aria-describedby="edit-driver--description" disabled="disabled" type="radio" id="edit-driver-mysql" name="driver" value="mysql" checked="checked" class="form-radio" /> <label class="option" for="edit-driver-mysql">MySQL, MariaDB, Percona Server, or equivalent</label>
+</div>
+</div>
+<div class="description" id="edit-driver--description">The type of database your Drupal data will be stored in. Your PHP configuration only supports a single database type, so it has been automatically selected.</div>
+</div>
+<h2 class="js-hide">MySQL, MariaDB, Percona Server, or equivalent settings</h2><div data-drupal-states="{&quot;visible&quot;:{&quot;:input[name=driver]&quot;:{&quot;value&quot;:&quot;mysql&quot;}}}" id="edit-mysql" class="form-wrapper"><div class="form-item form-type-textfield form-item-mysql-database">
+ <label for="edit-mysql-database">Database name<abbr class="form-required" title="This field is required.">*</abbr></label> <input aria-describedby="edit-mysql-database--description" type="text" id="edit-mysql-database" name="mysql[database]" value="" size="45" maxlength="128" class="form-text required" required="required" aria-required="true" data-drupal-states="{&quot;required&quot;:{&quot;:input[name=driver]&quot;:{&quot;value&quot;:&quot;mysql&quot;}}}" />
+<div class="description" id="edit-mysql-database--description">The name of the database your Drupal data will be stored in.</div>
+</div>
+<div class="form-item form-type-textfield form-item-mysql-username">
+ <label for="edit-mysql-username">Database username<abbr class="form-required" title="This field is required.">*</abbr></label> <input type="text" id="edit-mysql-username" name="mysql[username]" value="" size="45" maxlength="128" class="form-text required" required="required" aria-required="true" data-drupal-states="{&quot;required&quot;:{&quot;:input[name=driver]&quot;:{&quot;value&quot;:&quot;mysql&quot;}}}" />
+</div>
+<div class="form-item form-type-password form-item-mysql-password">
+ <label for="edit-mysql-password">Database password</label> <input type="password" id="edit-mysql-password" name="mysql[password]" size="45" maxlength="128" class="form-text" />
+</div>
+<details aria-describedby="edit-mysql--2--description" class="form-wrapper" id="edit-mysql--2"><summary role="button" aria-controls="edit-mysql--2">Advanced options</summary><div class="details-wrapper"><div class="details-description">These options are only necessary for some sites. If you're not sure what you should enter here, leave the default settings or check with your hosting provider.</div><div class="form-item form-type-textfield form-item-mysql-host">
+ <label for="edit-mysql-host">Database host<abbr class="form-required" title="This field is required.">*</abbr></label> <input aria-describedby="edit-mysql-host--description" type="text" id="edit-mysql-host" name="mysql[host]" value="localhost" size="45" maxlength="255" class="form-text required" required="required" aria-required="true" />
+<div class="description" id="edit-mysql-host--description">If your database is located on a different server, change this.</div>
+</div>
+<div class="form-item form-type-textfield form-item-mysql-port">
+ <label for="edit-mysql-port">Database port</label> <input aria-describedby="edit-mysql-port--description" type="text" id="edit-mysql-port" name="mysql[port]" value="" size="45" maxlength="5" class="form-text" />
+<div class="description" id="edit-mysql-port--description">If your database server is listening to a non-standard port, enter its number.</div>
+</div>
+<div class="form-item form-type-textfield form-item-mysql-db-prefix">
+ <label for="edit-mysql-db-prefix">Table prefix</label> <input aria-describedby="edit-mysql-db-prefix--description" type="text" id="edit-mysql-db-prefix" name="mysql[db_prefix]" value="" size="45" maxlength="128" class="form-text" />
+<div class="description" id="edit-mysql-db-prefix--description">If more than one application will be sharing this database, enter a table prefix such as <em class="placeholder">drupal_</em> for your Drupal site here.</div>
+</div>
+</div></details>
+</div><input type="hidden" name="form_build_id" value="form-Ol2Q9OKmaD3ApHt32P5bIZV6hG55yGU3N4RGVypDjuY" /><input type="hidden" name="form_id" value="install_settings_form" /><div class="form-actions form-wrapper" id="edit-actions"><input formnovalidate="formnovalidate" type="submit" id="edit-save" name="op" value="Save and continue" class="button button-primary form-submit" /></div></div></form>
+        </div> <!-- /content-content -->
+      </div> <!-- /content -->
+
+      
+    </div> <!-- /container -->
+
+    <div id="footer-wrapper">
+      <div id="footer">
+              </div> <!-- /footer -->
+    </div> <!-- /footer-wrapper -->
+
+  </div> <!-- /page -->
+</body>
+</html>
